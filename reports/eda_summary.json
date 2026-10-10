@@ -1,0 +1,87 @@
+{
+  "train_rows": 8000,
+  "train_failures": 271,
+  "hdf": {
+    "temp_diff_k": {
+      "min": 7.6,
+      "max": 8.6
+    },
+    "speed_rpm": {
+      "min": 1212,
+      "max": 1379
+    }
+  },
+  "pwf_power_w": {
+    "power_w": {
+      "min": 1148.4,
+      "max": 10469.9
+    }
+  },
+  "osf_min_strain_by_variant": {
+    "H": 13582.0,
+    "L": 11003.0,
+    "M": 12337.0
+  },
+  "twf_tool_wear": {
+    "tool_wear_min": {
+      "min": 203,
+      "max": 253
+    }
+  },
+  "median_by_failure": {
+    "0": {
+      "air_temp_k": 300.0,
+      "process_temp_k": 310.0,
+      "speed_rpm": 1507.0,
+      "torque_nm": 39.8,
+      "tool_wear_min": 106.0,
+      "temp_diff_k": 9.8,
+      "power_w": 6244.4,
+      "strain_nm_min": 3948.0
+    },
+    "1": {
+      "air_temp_k": 301.6,
+      "process_temp_k": 310.5,
+      "speed_rpm": 1366.0,
+      "torque_nm": 53.2,
+      "tool_wear_min": 166.0,
+      "temp_diff_k": 9.3,
+      "power_w": 7559.5,
+      "strain_nm_min": 7752.0
+    }
+  },
+  "correlation_with_failure": {
+    "air_temp_k": 0.086,
+    "process_temp_k": 0.041,
+    "speed_rpm": -0.04,
+    "torque_nm": 0.19,
+    "tool_wear_min": 0.099,
+    "temp_diff_k": -0.111,
+    "power_w": 0.176,
+    "strain_nm_min": 0.186
+  },
+  "power_correlation": 0.176,
+  "failure_rate_by_variant_pct": {
+    "L": {
+      "failure": 4.08,
+      "TWF": 0.43,
+      "HDF": 1.33,
+      "PWF": 1.08,
+      "OSF": 1.53
+    },
+    "M": {
+      "failure": 2.44,
+      "TWF": 0.38,
+      "HDF": 0.71,
+      "PWF": 1.05,
+      "OSF": 0.29
+    },
+    "H": {
+      "failure": 2.03,
+      "TWF": 0.76,
+      "HDF": 0.63,
+      "PWF": 0.63,
+      "OSF": 0.13
+    }
+  }
+}

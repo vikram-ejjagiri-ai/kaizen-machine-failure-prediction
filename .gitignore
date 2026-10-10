@@ -3,10 +3,12 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.pytest_cache/
 
 # Secrets
 .env
 
-# Data and trained models
+# Data and trained models (recreate with: python -m src.pipeline)
 data/
+models/*.joblib
 models/*.pkl

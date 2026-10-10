@@ -74,9 +74,9 @@ Not available: timestamps, vibration data, maintenance history.
   documented data preparation.
 
 ## 7. Constraints and risks
-- **Rare failures:** only about 3–4% of runs end in a failure (to be verified
-  in Stage 3). A model that always predicts "no failure" would look 96%
-  accurate while being useless, so accuracy is the wrong metric.
+- **Rare failures:** only about 3–4% of runs end in a failure. A model that
+  always predicts "no failure" would look 96% accurate while being useless,
+  so accuracy is the wrong metric.
 - **Synthetic data:** results may not transfer directly to a real machine
   and must be validated on real plant data before production use.
 - **No time series:** each row is a snapshot, so the system can predict

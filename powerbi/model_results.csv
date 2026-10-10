@@ -1,0 +1,5 @@
+model,pr_auc,roc_auc,recall,precision,caught_failures,missed_failures,false_alarms,business_cost,accuracy
+Random forest (Sensors + physics),0.876,0.9777,0.8235,0.9333,56,12,4,124,
+"Expert rules (heat, power, overstrain)",,,0.8235,1.0,56,12,0,120,
+Expert rules + tool-wear limit,,,0.9559,0.3299,65,3,132,162,
+Dummy (always 'no failure'),,,0.0,0.0,0,68,0,680,0.966

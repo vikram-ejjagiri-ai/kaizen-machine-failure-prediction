@@ -1,0 +1,12 @@
+{
+  "Correct, no alarm": 9630,
+  "Caught failure": 285,
+  "Missed failure": 54,
+  "False alarm": 31,
+  "alarm_threshold": 0.4,
+  "risk_levels": {
+    "Green": 9571,
+    "Red": 316,
+    "Yellow": 113
+  }
+}

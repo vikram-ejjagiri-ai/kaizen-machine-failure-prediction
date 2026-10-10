@@ -1,0 +1,10 @@
+feature,importance
+speed_rpm,0.1041
+power_w,0.1013
+torque_nm,0.0829
+strain_nm_min,0.0707
+temp_diff_k,0.0664
+tool_wear_min,0.0619
+air_temp_k,0.0277
+process_temp_k,0.0155
+product_quality,0.0077

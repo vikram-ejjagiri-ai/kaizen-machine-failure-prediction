@@ -1,0 +1,12 @@
+model,features,pr_auc,roc_auc,best_threshold,recall,precision,caught_failures,missed_failures,false_alarms,business_cost
+Dummy (always 'no failure'),Raw sensors,0.0338,0.4985,0.99,0.0,0.0,0,271,0,2710
+Logistic regression,Raw sensors,0.4345,0.8957,0.81,0.572,0.3326,155,116,311,1471
+Decision tree,Raw sensors,0.5471,0.8423,0.89,0.7196,0.4577,195,76,231,991
+Random forest,Raw sensors,0.7559,0.9695,0.28,0.8081,0.605,219,52,143,663
+Gradient boosting,Raw sensors,0.7886,0.9677,0.06,0.8229,0.5747,223,48,165,645
+Logistic regression,Sensors + physics,0.4531,0.9225,0.81,0.6162,0.3465,167,104,315,1355
+Decision tree,Sensors + physics,0.806,0.9152,0.89,0.7897,0.7509,214,57,71,641
+Random forest,Sensors + physics,0.8937,0.9756,0.4,0.845,0.9016,229,42,25,445
+Gradient boosting,Sensors + physics,0.8849,0.9703,0.12,0.8339,0.8968,226,45,26,476
+"Expert rules (heat, power, overstrain)",Physics thresholds,,,,0.8376,1.0,227,44,0,440
+Expert rules + tool-wear limit,Physics thresholds,,,,0.9594,0.3852,260,11,415,525

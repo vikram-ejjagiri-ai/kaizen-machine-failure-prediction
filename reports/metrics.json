@@ -1,0 +1,69 @@
+{
+  "train_runs": 8000,
+  "train_failures": 271,
+  "test_runs": 2000,
+  "test_failures": 68,
+  "costs": {
+    "missed_failure": 10,
+    "false_alarm": 1
+  },
+  "chosen_model": "Random forest",
+  "chosen_features": "Sensors + physics",
+  "alarm_threshold": 0.4,
+  "test": {
+    "pr_auc": 0.876,
+    "roc_auc": 0.9777,
+    "recall": 0.8235,
+    "precision": 0.9333,
+    "caught_failures": 56,
+    "missed_failures": 12,
+    "false_alarms": 4,
+    "business_cost": 124
+  },
+  "test_missed_failures_by_type": {
+    "TWF": 9,
+    "HDF": 1,
+    "PWF": 0,
+    "OSF": 0,
+    "RNF": 0,
+    "no type given": 2
+  },
+  "rules_thresholds": {
+    "hdf_max_temp_diff_k": 8.6,
+    "hdf_max_speed_rpm": 1379.0,
+    "pwf_low_power_w": 3477.24,
+    "pwf_high_power_w": 9004.43,
+    "osf_min_strain": {
+      "H": 13582.4,
+      "L": 11003.2,
+      "M": 12337.2
+    },
+    "twf_min_tool_wear_min": 203.0
+  },
+  "type_model": {
+    "test_failures_with_type": 66,
+    "top_type_correct": 0.9696969696969697,
+    "per_type": {
+      "TWF": {
+        "test_cases": 10,
+        "recall": 0.7,
+        "precision": 1.0
+      },
+      "HDF": {
+        "test_cases": 29,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "PWF": {
+        "test_cases": 13,
+        "recall": 1.0,
+        "precision": 1.0
+      },
+      "OSF": {
+        "test_cases": 16,
+        "recall": 1.0,
+        "precision": 0.8888888888888888
+      }
+    }
+  }
+}
